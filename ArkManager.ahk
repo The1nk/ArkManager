@@ -114,7 +114,9 @@ Main:
                     ClickAt(FoundX, FoundY, "ArkClose.png")
                     Sleep(60000) ; Up the delay to 60-seconds
                 }
-                WinClose("ARK: Survival Evolved",, 60)
+                try {
+                    WinClose("ARK: Survival Evolved",, 60)
+                }
 
                 State := "KillArk"
                 Continue
